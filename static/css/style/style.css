@@ -1,0 +1,86 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add background color as needed */
+  z-index: 1000; /* Ensure the header is above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.logo-header {
+  display: flex;
+  margin-top:10px;
+  margin-left:30px;
+  align-items: center; /* Align logo vertically */
+}
+
+.logo {
+  margin-right: 20px; /* Add margin between logo and menu items */
+  width: 190px;
+  height: auto;
+}
+
+.navi-header {
+  /* No changes needed */
+}
+
+.list-pages {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  margin-right:40px
+}
+
+.list-pages li {
+  margin-top:25px;
+  display: inline-block; /* Display list items horizontally */
+  margin-left: 30px; /* Add spacing between list items */
+  position: relative;
+}
+
+.list-pages li a {
+  color: black; /* Change text color to black */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Set initial font size */
+  transition: font-size 0.3s ease, border-bottom 0.3s ease; /* Add transition for smooth animation */
+}
+
+.list-pages li a:hover {
+  font-size: 20px; /* Increase font size on hover */
+  font-weight: 200;
+  border-bottom: 1px solid black; /* Add underline on hover */
+}
+
+.list-pages li:first-child {
+  margin-left: 0px; /* Remove margin from the first list item */
+}
+
+.sections {
+  margin-top:0;
+  position:fixed;
+  text-align: center;
+  left:250px;
+  right:250px;
+}
+
+.line-below-header {
+  margin-top: 80px;
+  border-bottom: 1px solid #ccc; /* Add a solid line below the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow below the line */
+}
+
+section {
+  display: none;
+}
+
+section:target {
+  display: block;
+}
+
+section:target h2 {
+  font-weight: 100;
+}

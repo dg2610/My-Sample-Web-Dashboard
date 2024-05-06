@@ -40,6 +40,11 @@
     <div class="sections">
         <section id="dashboard" class ="section active">
           <h2>Covid-19 Malaysia</h2>
+          <div class="plot">
+            {% load static %}
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+            <script class= "plot-container" src="{% static 'js/plot1.js' %}"></script>
+          </div>
             <!-- Content for the dashboard section goes here -->
         </section>
         

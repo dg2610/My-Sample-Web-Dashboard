@@ -84,3 +84,31 @@ section:target {
 section:target h2 {
   font-weight: 100;
 }
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+.axis {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.plot-container {
+  margin-top: 100px; /* Adjust the top margin as needed */
+  width: 500px; /* Adjust the width of the chart */
+  height: 500px; /* Adjust the height of the chart */
+  margin-left: 40px;
+  margin-right: auto;
+}
